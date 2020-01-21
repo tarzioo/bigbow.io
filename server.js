@@ -8,15 +8,19 @@ const port = 3000;
 
 
 app.get('/', function(req,res){
- res.sendFile(__dirname + '/main.html');
+ res.sendFile(__dirname + '/templates/main.html');
 }); 
 
 app.get('/knitting', function(req,res){
- res.sendFile(__dirname + '/knitting.html');
+ res.sendFile(__dirname + '/templates/knitting.html');
 }); 
 
 app.get('/photography', function(req,res){
- res.sendFile(__dirname + '/photography.html');
+ res.sendFile(__dirname + '/templates/photography.html');
+});
+
+app.get('/developer', function(req,res){
+ res.sendFile(__dirname + '/templates/developer.html');
 }); 
 
 // app.post('/', (req, res) => {
